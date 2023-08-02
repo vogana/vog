@@ -9,6 +9,17 @@ body {
     font-family: "微软雅黑", sans-serif;
     color: #333; /* 文本颜色 */
 }
+#backToTopBtn {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: #B59595;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* 头部样式 */
 .header {
