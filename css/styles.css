@@ -1,0 +1,108 @@
+/* 重置部分默认样式 */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置微软雅黑字体和颜色 */
+body {
+    font-family: "微软雅黑", sans-serif;
+    color: #333; /* 文本颜色 */
+}
+
+/* 头部样式 */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #333; /* 导航栏背景颜色 */
+}
+
+.logo img {
+    max-width: 80%;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px; /* 字体大小 */
+}
+
+/* 内容样式 */
+
+.vogana01 {
+    height: 60px;
+    font-size: 14px; /* 字体大小 */
+}
+.vogana02 {
+    height: 100%;
+    font-size: 14px; /* 字体大小 */
+    color: #A7A7A7; /* 文本颜色 */
+}
+
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-size: 16px; /* 字体大小 */
+    color: #555; /* 文本颜色 */
+    background-color: #f9f9f9; /* 内容区域背景颜色 */
+}
+
+/* 底部样式 */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px; /* 字体大小 */
+	color: #555; /* 文本颜色 */
+}
+
+/* 媒体查询：电脑 */
+@media screen and (min-width: 1024px) {
+    .content {
+    font-size: 18px;
+    height: 30px;
+    }
+}
+
+/* 媒体查询：平板 */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .content {
+        font-size: 16px;
+    }
+}
+
+/* 媒体查询：手机 */
+@media screen and (max-width: 767px) {
+    .content {
+        font-size: 14px;
+    }
+}
