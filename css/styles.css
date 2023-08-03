@@ -5,6 +5,11 @@ body, h1, p, ul, li {
 }
 
 /* 设置微软雅黑字体和颜色 */
+
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: "微软雅黑", sans-serif;
     color: #333; /* 文本颜色 */
