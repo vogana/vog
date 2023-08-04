@@ -1,0 +1,14 @@
+/* 默认样式 */
+.nav-container {
+    font-size: 15px;
+    color: white;
+    padding: 0px 0px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 19px;
+    position: fixed;
+    top: auto;
+    right: 35px;
+    transform: translate(0, -50%);
+}

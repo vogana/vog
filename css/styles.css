@@ -80,8 +80,9 @@ body {
 }
 .vogana02 {
     height: 100%;
-    font-size: 14px; /* 字体大小 */
-    color: #A7A7A7; /* 文本颜色 */
+    font-size: 16px; /* 字体大小 */
+    color: #000000; /* 文本颜色 */	
+	
 }
 
 .content {
@@ -90,7 +91,9 @@ body {
     padding: 0 20px;
     font-size: 16px; /* 字体大小 */
     color: #555; /* 文本颜色 */
-    background-color: #f9f9f9; /* 内容区域背景颜色 */
+
+	
+	
 }
 
 /* 底部样式 */
@@ -124,6 +127,6 @@ body {
 /* 媒体查询：手机 */
 @media screen and (max-width: 767px) {
     .content {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
