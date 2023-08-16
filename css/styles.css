@@ -66,9 +66,71 @@ body {
     font-size: 14px; /* 字体大小 */
 }
 
-/* 全局样式重置 */
+/* 电脑样式 */
+@media (min-width: 1024px) {
+    .menu-icon {
+        display: none;
+    }
+}
 
-/* 设置相册容器样式 */
+
+/* 平板 */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+/* 手机样式 */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+/* 全局样式重置
+
+设置相册容器样式 */
 .gallery {
     display: flex;
     flex-wrap: wrap;
