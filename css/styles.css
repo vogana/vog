@@ -5,7 +5,6 @@ body, h1, p, ul, li {
 }
 
 /* 设置微软雅黑字体和颜色 */
-
 a {
     text-decoration: none;
 }
@@ -13,19 +12,18 @@ a {
 body {
     font-family: "微软雅黑", sans-serif;
     color: #333; /* 文本颜色 */
-	
 }
+
 #backToTopBtn {
     position: fixed;
     bottom: 50px;
     right: 30px;
     padding: 8px 10px;
-    background-color: rgba(0,0,0,0.18);
+    background-color: rgba(0, 0, 0, 0.18);
     color: #fff;
     border: none;
     cursor: pointer;
 }
-
 
 /* 头部样式 */
 .header {
@@ -35,7 +33,6 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-	
 }
 
 .navbar {
@@ -46,8 +43,6 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     background-color: #333; /* 导航栏背景颜色 */
-	
-	
 }
 
 .logo img {
@@ -58,7 +53,6 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-	
 }
 
 .nav-links li {
@@ -72,17 +66,40 @@ body {
     font-size: 14px; /* 字体大小 */
 }
 
-/* 内容样式 */
+/* 全局样式重置 */
 
+/* 设置相册容器样式 */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 设置图片样式 */
+.image {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 内容样式 */
 .vogana01 {
     height: 60px;
     font-size: 14px; /* 字体大小 */
 }
+
 .vogana02 {
     height: 100%;
     font-size: 16px; /* 字体大小 */
-    color: #000000; /* 文本颜色 */	
-	
+    color: #000000; /* 文本颜色 */
 }
 
 .content {
@@ -91,9 +108,6 @@ body {
     padding: 0 20px;
     font-size: 16px; /* 字体大小 */
     color: #555; /* 文本颜色 */
-
-	
-	
 }
 
 /* 底部样式 */
@@ -106,14 +120,17 @@ body {
     bottom: 0;
     width: 100%;
     font-size: 14px; /* 字体大小 */
-	color: #555; /* 文本颜色 */
+    color: #555; /* 文本颜色 */
 }
 
 /* 媒体查询：电脑 */
 @media screen and (min-width: 1024px) {
     .content {
-    font-size: 18px;
-    height: 30px;
+        font-size: 18px;
+    }
+
+    .image {
+        flex-basis: calc(33.33% - 10px); /* 每行三张图片，每张图片占据1/3的宽度 */
     }
 }
 
@@ -122,11 +139,19 @@ body {
     .content {
         font-size: 16px;
     }
+
+    .image {
+        flex-basis: calc(50% - 10px); /* 每行两张图片，每张图片占据1/2的宽度 */
+    }
 }
 
 /* 媒体查询：手机 */
 @media screen and (max-width: 767px) {
     .content {
         font-size: 16px;
+    }
+
+    .image {
+        flex-basis: 100%; /* 每行一张图片，每张图片占据100%的宽度 */
     }
 }
