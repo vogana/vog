@@ -33,7 +33,6 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-	
 }
 
 .navbar {
@@ -44,24 +43,27 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     background-color: #333; /* 导航栏背景颜色 */
-	
 }
+
 .logo {
     display: flex;
     align-items: center;
 }
+
 .logo img {
     max-width: 80%;
     height: auto;
 }
+
 .logo-text {
-     font-weight: bold;
+    font-weight: bold;
     margin-left: 10px;
 }
+
 .nav-links {
     list-style: none;
     display: flex;
-	padding-left: 30px; /* 往右偏移 10px */
+    padding-left: 30px; /* 往右偏移 10px */
 }
 
 .nav-links li {
@@ -82,35 +84,8 @@ body {
     }
 }
 
-
-/* 平板 */
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: #444;
-        position: absolute;
-        top: 75px;
-        left: 0;
-        width: 100%;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-    }
-}
-/* 手机样式 */
-@media (max-width: 768px) {
+/* 平板和手机共享样式 */
+@media screen and (max-width: 1023px) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -136,10 +111,7 @@ body {
     }
 }
 
-
-/* 全局样式重置
-
-设置相册容器样式 */
+/* 全局样式重置/设置相册容器样式 */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -164,7 +136,6 @@ body {
 /* 内容样式 */
 .vogana01 {
     height: 75px;
-
 }
 
 .vogana02 {
@@ -223,7 +194,6 @@ body {
     color: #ff9800; /* 鼠标悬停时的颜色 */
 }
 
-
 /* 媒体查询：电脑 */
 @media screen and (min-width: 1024px) {
     .content {
@@ -235,8 +205,8 @@ body {
     }
 }
 
-/* 媒体查询：平板 */
-@media screen and (max-width: 1023px) and (min-width: 768px) {
+/* 媒体查询：平板和手机共享样式 */
+@media screen and (max-width: 1023px) {
     .content {
         font-size: 16px;
     }
@@ -257,20 +227,20 @@ body {
     }
 }
 
-
-
 /* 媒体查询：电脑 */
 @media screen and (min-width: 1024px) {
     .mobile-content {
         display: none;
     }
 }
+
 /* 媒体查询：平板 */
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .desktop-content {
         display: none;
     }
 }
+
 /* 媒体查询：手机 */
 @media screen and (max-width: 767px) {
     .desktop-content {

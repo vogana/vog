@@ -1,3 +1,4 @@
+// 护眼模式
 document.addEventListener("DOMContentLoaded", function () {
     const changeColorBtn = document.getElementById("changeColorBtn");
     const body = document.body;

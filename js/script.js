@@ -1,3 +1,4 @@
+// 返回顶部按钮
 const backToTopBtn = document.getElementById("backToTopBtn");
 
 // 初始化按钮的显示状态
