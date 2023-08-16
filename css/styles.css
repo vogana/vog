@@ -120,7 +120,7 @@ body {
     bottom: 0;
     width: 100%;
     font-size: 14px; /* 字体大小 */
-    color: #555; /* 文本颜色 */
+    color: #FFFFFF; /* 文本颜色 */
 }
 
 /* 媒体查询：电脑 */
@@ -153,5 +153,26 @@ body {
 
     .image {
         flex-basis: 100%; /* 每行一张图片，每张图片占据100%的宽度 */
+    }
+}
+
+
+
+/* 媒体查询：电脑 */
+@media screen and (min-width: 1024px) {
+    .mobile-content {
+        display: none;
+    }
+}
+/* 媒体查询：平板 */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .desktop-content {
+        display: none;
+    }
+}
+/* 媒体查询：手机 */
+@media screen and (max-width: 767px) {
+    .desktop-content {
+        display: none;
     }
 }
