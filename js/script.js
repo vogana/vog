@@ -11,7 +11,7 @@ backToTopBtn.addEventListener("click", scrollToTop);
 
 // 滚动时根据滚动条位置显示/隐藏按钮
 function toggleBackToTopButton() {
-    if (window.scrollY > 0) {
+    if (window.scrollY > 1000) {
         backToTopBtn.style.display = "block";
     } else {
         backToTopBtn.style.display = "none";
