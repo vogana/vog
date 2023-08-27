@@ -4,11 +4,6 @@ body, h1, p, ul, li {
     padding: 0;
 }
 
-/* 设置微软雅黑字体和颜色 */
-a {
-    text-decoration: none;
-}
-
 body {
     font-family: "微软雅黑", sans-serif;
     color: #333; /* 文本颜色 */
@@ -104,7 +99,7 @@ body {
         align-items: flex-start;
         background-color: #333;
         position: absolute;
-        top: 75px;
+        top: 60px;
         left: 0;
         width: 100%;
     }
@@ -114,7 +109,7 @@ body {
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 10px 0;/* 字体行高 */
     }
 
     .menu-icon {
@@ -132,7 +127,6 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-
 /* 设置图片样式 */
 .image {
     margin-bottom: 20px;
@@ -188,7 +182,7 @@ body {
 }
 
 .menu-list li {
-    margin-right: 50px;
+    margin-right: 60px;
 }
 
 .menu-list li:last-child {
