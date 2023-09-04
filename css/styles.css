@@ -118,26 +118,6 @@ body {
     }
 }
 
-/* 全局样式重置/设置相册容器样式 */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
-/* 设置图片样式 */
-.image {
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 
 /* 内容样式 */
 .vogana01 {

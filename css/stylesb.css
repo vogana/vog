@@ -19,3 +19,189 @@
     height: 30px;
     margin-top: 0px;
     }
+
+/* 默认样式 *//* 默认样式 */
+
+
+  .card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+   /* 将卡片元素移到下层，使 z-index 较小 */
+  z-index: 0;
+}
+
+
+
+
+
+.container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 垂直居中 */
+            text-align: center; /* 文本居中 */
+            padding: 20px;
+            font-size: 14px;
+            
+        }
+
+        .card-text {
+
+            white-space: nowrap; /* 不换行 */
+            overflow: hidden; /* 处理文本溢出 */
+            text-overflow: ellipsis; /* 超出部分用省略号表示 */
+            max-width: 100%; /* 最大宽度为容器宽度 */
+            display: flex; /* 使用弹性盒子布局 */
+            align-items: center; /* 垂直居中 */
+            justify-content: center; /* 水平居中 */
+            font-size: 14px;
+        }
+
+        .myInput {
+            width: 100%; /* 让输入框的宽度与外部容器一致 */
+            box-sizing: border-box; /* 让输入框的宽度包含边框 */
+            padding: 5px;
+            border: none;
+            background-color: transparent; /* 去掉背景色 */
+            font-size: 0.1rem;
+            text-align: center; /* 文本居中 */
+             align-items: center; /* 垂直居中 */
+        }
+
+        
+        
+        
+        
+        
+        
+
+.button-container {
+            display: flex; /* 使用弹性盒子布局 */
+            align-items: center; /* 垂直居中 */
+
+        }
+
+        .button-container a,
+        .button-container button {
+            flex: 1; /* 均分可用空间 */
+            margin: 5px; /* 调整按钮之间的间距 */
+            background-color: #007bff; /* 背景颜色 */
+            color: #fff; /* 文本颜色 */
+            border: none; /* 去除边框 */
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 8px; /* 圆角 */
+            text-align: center; /* 文本居中 */
+            height: 25px; /* 固定按钮高度为14px */
+            line-height: 25px; /* 使文本垂直居中 */
+            font-size: 14px;
+        }
+
+        .button-container a:hover,
+        .button-container button:hover {
+            background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-img-bottom {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 90px;
+
+}
+
+
+.card-img-top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+        height: 90px;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+padding-top: 0rem;
+padding-right: 0.5rem;
+padding-bottom: 0.5rem;
+padding-left: 0.5rem;
+}
+.card-title {
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
+.gallery {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+            column-count: 4; /* 列数为4 */
+            column-gap: 10px; /* 列之间的间隔为10px */
+            align-items: flex-start; /* 顶端对齐 */
+        }
+        .image {
+            width: 100%; /* 每个项目的宽度为100% */
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            margin-bottom: 10px; /* 垂直间距为10px */
+            break-inside: avoid-column; /* 避免跨列分割 */
+            padding: 5px;
+            box-sizing: border-box;
+        }
+                .image:hover {
+    transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    box-shadow: 0 26px 40px -24px rgba(0, 36, 100, 0.3);
+    -webkit-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, 0.3);
+    -moz-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, 0.3);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    filter: brightness(0.9); /* 鼠标经过时使图像变暗 */
+}
+
+         .image img {
+ width: 100%;
+     height: auto;
+    display: block;
+
+} 
+
+        /* 响应式布局 */
+        @media screen and (max-width: 1024px) {
+            .gallery {
+                column-count: 3; /* 列数为3 */
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .gallery {
+                column-count: 1; /* 列数为1 */
+            }
+        }
