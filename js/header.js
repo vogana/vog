@@ -1,7 +1,7 @@
 // header.js
 export const headerContent = `
-  <header>
-<!-- 导航部分 -->
+
+
 <div class="header">
   <div class="navbar">
     <div class="logo"> <img src="images/opo.svg" alt="Logo"width="40" height="40"> <span class="logo-text">服装技术论坛</span> </div>
@@ -37,5 +37,5 @@ export const headerContent = `
     </ul>
   </div>
 </div>
-  </header>
+
 `;
