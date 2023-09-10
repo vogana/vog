@@ -1,6 +1,6 @@
 // header.js
 export const headerContent = `
-
+  <header>
 
 <div class="header">
   <div class="navbar">
@@ -37,5 +37,5 @@ export const headerContent = `
     </ul>
   </div>
 </div>
-
+  </header>
 `;
