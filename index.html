@@ -70,6 +70,32 @@
   <div class="vogana01"> </div>
   <div class="vogana02">
     <div>
+		<button class="loadStaticPage" data-page="lianxi.html">加载静态B页面</button>
+<button class="loadStaticPage" data-page="fuwu.html">加载静态C页面</button>
+<button class="loadStaticPage" data-page="pageD.html">加载静态D页面</button>
+<div id="staticPageContent"></div>
+
+<script>
+  var buttons = document.querySelectorAll(".loadStaticPage");
+  var staticPageContent = document.getElementById("staticPageContent");
+
+  buttons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      var pageUrl = button.getAttribute("data-page");
+      // 使用Ajax请求加载相应静态页面的内容
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          // 将静态页面内容显示在staticPageContent元素中
+          staticPageContent.innerHTML = xhr.responseText;
+        }
+      };
+      xhr.open("GET", pageUrl, true);
+      xhr.send();
+    });
+  });
+</script>
+
       <h1>招聘服装论坛版主</h1>
       <br>
       职责与要求： 管理论坛内容，监督帖子和评论，确保内容质量和秩序。
