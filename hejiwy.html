@@ -69,46 +69,41 @@
 <div class="content">
   <div class="vogana01"> </div>
   <div class="vogana02">
-    <div>
-		
+    <div class="gallery">
+	
+		<button class="loadStaticPage" data-page="wangye/weiyi.html">加载静态B页面</button>
+<button class="loadStaticPage" data-page="pageC.html">加载静态C页面</button>
+<button class="loadStaticPage" data-page="pageD.html">加载静态D页面</button>
+<div id="staticPageContent"></div>
 
-      <h1>招聘服装论坛版主</h1>
-      <br>
-      职责与要求： 管理论坛内容，监督帖子和评论，确保内容质量和秩序。
-      积极参与讨论，提供有益的时尚、服装相关建议。
-      协助解答其他会员的问题，分享你的专业知识和见解。
-      与团队密切合作，共同维护良好的社区氛围。
-      具备良好的沟通和协调能力，能够妥善处理纠纷和争议。
-      具备一定的服装、时尚领域知识，有相关经验者优先考虑。 <br>
-      <ul>
-        福利：
-        获得丰富的时尚与服装领域知识，拓展你的个人兴趣爱好。
-        增强沟通与管理能力，提升团队协作技巧。
-        在论坛中建立影响力，结识志同道合的朋友。
-        有机会参与时尚活动、赛事，拓展人际关系。
-        长期优秀表现者有晋升机会。
-        如果你热爱时尚，善于与人沟通，愿意为论坛的繁荣发展贡献一份力量，欢迎发送你的简历至[邮箱地址]，并在邮件标题中注明“服装论坛版主申请”。
-      </ul>
-      <br>
-      <ul>
-        让我们一起，用热情与知识点亮时尚的舞台！期待你的加入！
-      </ul>
-      <br>
-      <ul>
-        联系方式 <br>
-        邮箱：cctv92@126.com<br>
-        网址：<a href="https://annazi.link:10334/">https://annazi.link</a>
-      </ul>
+<script>
+  var buttons = document.querySelectorAll(".loadStaticPage");
+  var staticPageContent = document.getElementById("staticPageContent");
+
+  buttons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      var pageUrl = button.getAttribute("data-page");
+      // 使用Ajax请求加载相应静态页面的内容
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          // 将静态页面内容显示在staticPageContent元素中
+          staticPageContent.innerHTML = xhr.responseText;
+        }
+      };
+      xhr.open("GET", pageUrl, true);
+      xhr.send();
+    });
+  });
+</script>
+
+      
+  
     </div>
     <br>
-	  
-	  
-	  
-	  
-	  
-	  
-	  
+   
 
+    </div>
     <br>
   </div>
 </div>
