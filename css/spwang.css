@@ -1,0 +1,188 @@
+body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+      overflow: hidden;
+      background-color: #333;
+    }
+	  
+
+    #videoContainer {
+      flex: 8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #333;
+    }
+
+    #videoPlayer {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    #videoListContainer {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      background-color: #fff;
+      box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+/* 样式为视频描述文本 */
+	  .video-item span {
+       font-size: 12px; /* 设置字体大小 */
+       color: #333; /* 设置字体颜色 */
+}
+
+/* 图像容器 */
+.content-container {
+  display: flex;
+  align-items: flex-start; /* 图像和文本顶部对齐 */
+  margin-bottom: 10px; /* 图像和描述之间的间距 */
+}
+
+/* 样式为图像元素 */
+.thumbnail {
+  width: 140px;
+  height: 80px;
+  margin-right: 10px; /* 图像和描述之间的间距 */
+}
+
+/* 样式为视频项 */
+.video-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  display: flex; /* 使用 Flex 布局 */
+  align-items: flex-start; /* 图像和文本顶部对齐 */
+  flex-wrap: wrap; /* 如果文本超出容器高度，换行到下方 */
+}
+
+
+    .video-item:last-child {
+      border-bottom: none;
+    }
+
+    #controlsContainer {
+      display: none;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      text-align: center;
+    }
+
+    #prevButton, #nextButton {
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 0px;
+    }
+    #prevButton02 {
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 0px;
+    }
+    
+	  #showListButton {
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 0px;
+    }
+
+    /* 媒体查询：电脑 */
+    @media screen and (max-width: 1024px) {
+        #videoContainer {
+        flex: 8;
+        height: 100vh;
+      }
+		#videoListContainer {
+	  display: none;
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      background-color: #fff;
+      box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+    }
+
+    /* 媒体查询：平板 */
+    @media screen and (max-width: 1023px) and (min-width: 767px) {
+      #videoContainer {
+        flex: 7;
+        height: 95vh;
+      }
+        #controlsContainer {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 25px;
+      }
+		#videoListContainer {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      background-color: #fff;
+      box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+    }
+
+    /* 媒体查询：手机 */
+    @media screen and (max-width: 767px) {
+      #videoContainer {
+        flex: 6;
+        height: 95vh;
+      }
+        #controlsContainer {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 30px;
+      }
+		#videoListContainer {
+      flex: 4;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      background-color: #fff;
+      box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+    }
