@@ -234,3 +234,139 @@ body {
     }
 }
 
+
+
+
+
+
+/* 基础样式设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+}
+
+/* 首页横幅样式 */
+#banner {
+    background: linear-gradient(135deg, #ff6600, #ff3366);
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#banner p {
+    font-size: 1.2em;
+}
+
+/* 关于我们部分 */
+#about-us {
+    background-color: white;
+    padding: 50px 20px;
+    margin: 0 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#about-us h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+}
+
+/* 服务部分 */
+#services {
+    margin: 0 20px;
+    padding-bottom: 50px;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.service {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    color: #ff6600;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.service strong {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    #banner h1 {
+        font-size: 2em;
+    }
+
+    #banner p {
+        font-size: 1em;
+    }
+
+    #about-us {
+        padding: 30px 20px;
+    }
+
+    #services h2 {
+        font-size: 2em;
+    }
+
+    .service {
+        padding: 20px;
+    }
+
+    .service h3 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 480px) {
+    #banner {
+        padding: 50px 15px;
+    }
+
+    .service {
+        padding: 15px;
+    }
+}
