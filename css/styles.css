@@ -362,3 +362,95 @@ h1, h2, h3 {
         padding: 15px;
     }
 }
+
+
+
+
+
+
+
+
+
+	<style>
+  /* CSS样式 */
+  .image-wrapper {
+  width: 100%; /* 设置宽度为100% */
+  height: 100%;
+}
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+  .carousel img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始状态设置为透明 */
+    transition: opacity 0.5s ease;
+  }
+  .carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    display: none;
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    z-index: 2;
+  }
+  .carousel-btn.prev {
+    left: 0;
+  }
+  .carousel-btn.next {
+    right: 0;
+  }
+
+  /* 响应式设计 */
+  @media screen and (max-width: 767px) {
+    .carousel {
+      height: 160px;
+    }
+  .annazi-ggh h1,
+  .annazi-gh h2 {
+    font-size: 18px; /* 调整电脑端H2字体大小为14像素 */
+  }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel {
+      height: 300px;
+    }
+  .annazi-ggh h1,
+  .annazi-gh h2 {
+    font-size: 20px; /* 调整电脑端H2字体大小为14像素 */
+  }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .carousel {
+      height: 400px;
+      
+    }
+  .annazi-ggh h1,
+  .annazi-gh h2 {
+    font-size: 25px; /* 调整电脑端H2字体大小为14像素 */
+  }
+  }
+</style>
