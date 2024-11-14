@@ -1,13 +1,4 @@
-/* 重置部分默认样式 */
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    font-family: "微软雅黑", sans-serif;
-    color: #333; /* 文本颜色 */
-}
 #backToTopBtn {
     position: fixed;
     bottom: 50px;
@@ -237,6 +228,12 @@ body {
 
 
 
+/* 重置部分默认样式 */
+body, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
 
 
 /* 基础样式设置 */
@@ -247,7 +244,7 @@ body {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial',  '微软雅黑', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
