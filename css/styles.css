@@ -273,7 +273,7 @@ h1, h2, h3 {
 #about-us {
     background-color: white;
     padding: 50px 20px;
-    margin: 0 20px 50px;
+    margin: 0 0px 50px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
