@@ -234,3 +234,183 @@ body {
         display: none;
     }
 }
+
+
+
+/* 通用样式 */
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 主页横幅 */
+.hero {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* 服务详细内容 */
+.services-detail {
+    padding: 60px 10%;
+    background-color: #fff;
+    color: #333;
+}
+
+.services-detail h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.services-detail p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* 单个服务项 */
+.service-detail {
+    margin-bottom: 40px;
+}
+
+.service-detail h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.service-detail p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.service-detail ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-detail ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+/* 首页关于我们部分 */
+.about {
+    padding: 60px 10%;
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* 服务列表 */
+.services {
+    padding: 60px 10%;
+    background-color: #fff;
+    color: #333;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* 每项服务 */
+.service-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-item h3 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.service-item strong {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* 响应式设计：调整屏幕宽度 */
+@media (max-width: 768px) {
+    .services-detail, .about, .services {
+        padding: 40px 5%;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .service-item {
+        padding: 20px;
+    }
+
+    .service-item h3 {
+        font-size: 1.6em;
+    }
+
+    .service-detail h2 {
+        font-size: 1.8em;
+    }
+
+    .service-detail p, .service-item p {
+        font-size: 1em;
+    }
+}
