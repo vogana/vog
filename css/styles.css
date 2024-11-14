@@ -239,7 +239,7 @@
 }
 
 body {
-    font-family: 'Arial',  '微软雅黑', sans-serif;
+    font-family: 'Arial', '微软雅黑', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -282,22 +282,30 @@ h1, h2, h3 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2.2em;
+    color: #ff6600;
+}
+
+#about-us p {
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.6;
 }
 
 /* 服务部分 */
-
 .service {
     background-color: white;
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .service:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
 }
 
 .service h3 {
@@ -311,8 +319,24 @@ h1, h2, h3 {
     line-height: 1.6;
 }
 
-.service strong {
-    font-weight: bold;
+.service ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.service ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.service ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
     color: #ff6600;
 }
 
@@ -330,7 +354,7 @@ h1, h2, h3 {
         padding: 30px 20px;
     }
 
-    #services h2 {
+    #about-us h2 {
         font-size: 2em;
     }
 
@@ -352,8 +376,3 @@ h1, h2, h3 {
         padding: 15px;
     }
 }
-
-
-
-
-
