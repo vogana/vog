@@ -68,7 +68,130 @@
 <!-- 内容样式 */ -->
 <div class="content">
   <div class="vogana01"> </div>
-  <div class="vogana02">		
+  <div class="vogana02">
+
+
+
+
+<style>
+  /* CSS样式 */
+  .image-wrapper {
+  width: 100%; /* 设置宽度为100% */
+  height: 100%;
+}
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+  .carousel img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始状态设置为透明 */
+    transition: opacity 0.5s ease;
+  }
+  .carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    display: none;
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    z-index: 2;
+  }
+  .carousel-btn.prev {
+    left: 0;
+  }
+  .carousel-btn.next {
+    right: 0;
+  }
+
+  /* 响应式设计 */
+  @media screen and (max-width: 767px) {
+    .carousel {
+      height: 160px;
+    }
+  .annazi-ggh h1,
+  .annazi-gh h2 {
+    font-size: 18px; /* 调整电脑端H2字体大小为14像素 */
+  }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel {
+      height: 300px;
+    }
+  .annazi-ggh h1,
+  .annazi-gh h2 {
+    font-size: 20px; /* 调整电脑端H2字体大小为14像素 */
+  }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .carousel {
+      height: 400px;
+      
+    }
+  .annazi-ggh h1,
+  .annazi-gh h2 {
+    font-size: 25px; /* 调整电脑端H2字体大小为14像素 */
+  }
+  }
+</style>
+
+<!-- HTML结构 -->
+<div class="carousel" id="carousel">
+  <div class="carousel-content" style="display:block;">
+    <div class="annazi-gh"> <h2>承接3D设计建模，制版，样衣，大货生产服务</h2>  </div><div></div>
+    
+  </div>
+  <div class="image-wrapper" style="background-image: url('buju/images/c23d.webp');"> <!-- 添加包裹图片的div -->
+    <img src="buju/images/annazi23.webp" alt="Slide 1" style="opacity:1;">
+  </div>
+  
+  <div class="carousel-content">
+    <div class="annazi-gh"><h2>我们提供从设计稿到成品的全方位服务，价格透明，服务贴心</h2></div>
+    
+  </div>
+  <div class="image-wrapper" style="background-image: url('buju/images/c22d.webp');"> <!-- 添加包裹图片的div -->
+    <img src="buju/images/annazi21.webp" alt="Slide 2">
+  </div>
+  
+  <div class="carousel-content">
+    <div class="annazi-gh"><h2>我们将竭诚为您提供专业的制版打样服务</h2></div>
+    
+  </div>
+  <div class="image-wrapper" style="background-image: url('buju/images/c21d.webp');"> <!-- 添加包裹图片的div -->
+    <img src="buju/images/annazi22.webp" alt="Slide 3">
+  </div>
+  
+  <div class="carousel-btn prev" onclick="changeSlide(-1)">‹</div>
+  <div class="carousel-btn next" onclick="changeSlide(1)">›</div>
+</div>
+
+
+
+
+
+	  
 
 
 <!-- 首页横幅 -->
