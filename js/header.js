@@ -4,7 +4,7 @@ export const headerContent = `
 
 <div class="header">
   <div class="navbar">
-    <div class="logo"> <img src="images/opo.svg" alt="Logo"width="40" height="40"> <span class="logo-text">服装技术论坛</span> </div>
+    <div class="logo"> <img src="images/opo.svg" alt="Logo"width="40" height="40"> <span class="logo-text">宁波服装制版工作室</span> </div>
     <div class="menu-icon" onclick="toggleNav()">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
         <path d="M1 4.5A1.5 1.5 0 0 1 2.5 3h11A1.5 1.5 0 0 1 15 4.5h-14zm0 5A1.5 1.5 0 0 1 2.5 8h11A1.5 1.5 0 0 1 15 9.5h-14zm0 5A1.5 1.5 0 0 1 2.5 13h11A1.5 1.5 0 0 1 15 14.5h-14z"/>
