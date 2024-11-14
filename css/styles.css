@@ -1,5 +1,5 @@
 /* 重置部分默认样式 */
-body, h1, p, ul, li {
+body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
