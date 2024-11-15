@@ -173,9 +173,6 @@
 
 /* 媒体查询：电脑 */
 @media screen and (min-width: 1024px) {
-    .content {
-        font-size: 18px;
-    }
 
     .image {
         flex-basis: calc(33.33% - 10px); /* 每行三张图片，每张图片占据1/3的宽度 */
@@ -184,9 +181,7 @@
 
 /* 媒体查询：平板和手机共享样式 */
 @media screen and (max-width: 1023px) {
-    .content {
-        font-size: 16px;
-    }
+
 
     .image {
         flex-basis: calc(50% - 10px); /* 每行两张图片，每张图片占据1/2的宽度 */
@@ -195,9 +190,7 @@
 
 /* 媒体查询：手机 */
 @media screen and (max-width: 767px) {
-    .content {
-        font-size: 16px;
-    }
+
 
     .image {
         flex-basis: 100%; /* 每行一张图片，每张图片占据100%的宽度 */
