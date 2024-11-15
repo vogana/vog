@@ -249,25 +249,6 @@ h1, h3 {
     color: #333;
 }
 
-/* 首页横幅样式 */
-#banner {
-	background: linear-gradient(135deg, #2cff0026, #ff33e978);
-	padding: 80px 20px;
-	text-align: center;
-	color: #6b5c9fe5;
-	border-radius: 15px;
-	margin-bottom: 50px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-#banner h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-#banner p {
-    font-size: 1.2em;
-}
 
 /* 关于我们部分 */
 #about-us {
