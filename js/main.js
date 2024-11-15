@@ -99,6 +99,37 @@ const headContent = `
   <link rel="stylesheet" href="css/stylesb.css?v=2">
   <link rel="stylesheet" href="css/styles-h.css?v=2">
 `;
+const panelContent = `
+  <div id="panel" style="display: none;">
+    <div>
+      <div class="apple-text">
+        <a href="https://www.annazi.cn/" target="_blank">
+          <img src="images/c01.svg" alt="图片">制版工作室
+        </a>
+      </div>
+      <div class="apple-text">
+        <a href="https://lt.annazi.cn/" target="_blank">
+          <img src="images/c01.svg" alt="图片">服装论坛
+        </a>
+      </div>
+      <div>
+        <img src="images/weixin.jpg" height="80" width="80" alt="图片">
+      </div>
+      <div class="apple-text">
+        QQ群: 178919834<br>
+        cctv92@126.com
+      </div>
+    </div>
+    <div class="nav-container">
+      <button id="changeColorBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-palette-fill" viewBox="0 0 16 16">
+          <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+`;
+
 
 // 在页面加载时插入内容
 document.addEventListener('DOMContentLoaded', function () {
@@ -120,3 +151,12 @@ document.addEventListener('DOMContentLoaded', function () {
     footerElement.innerHTML = footerContent;
   }
 });
+
+// 在页面加载后插入隐藏面板
+document.addEventListener('DOMContentLoaded', function () {
+  const bodyElement = document.querySelector('body');  // 获取 body 元素
+  if (bodyElement) {
+    bodyElement.insertAdjacentHTML('beforeend', panelContent);  // 将面板内容插入页面
+  }
+});
+
