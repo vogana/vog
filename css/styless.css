@@ -8,7 +8,7 @@
   padding: 20px;
   box-sizing: border-box;
   position: fixed; /* 使用 fixed 定位 */
-  top: 300px; /* 距顶部 300px */
+  bottom: 100px; /* 距离底部 100px */
   right: 0; /* 靠右边边缘 */
 	
 }
