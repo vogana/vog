@@ -100,6 +100,52 @@
   <div class="carousel-btn next" onclick="changeSlide(1)">›</div>
 </div>
 <!-- 海报 -->
+<!-- JavaScript代码海报 -->
+<script>
+  let currentSlide = 0;
+  const totalSlides = document.querySelectorAll('.carousel img').length;
+
+  function showSlide(n) {
+    const slides = document.querySelectorAll('.carousel img');
+    const contents = document.querySelectorAll('.carousel-content');
+    const imageWrappers = document.querySelectorAll('.image-wrapper');
+
+    // 处理索引超出边界的情况
+    currentSlide = (n + totalSlides) % totalSlides;
+
+    // 隐藏前一个图片和文本内容
+    slides.forEach(slide => slide.style.opacity = 0); 
+    contents.forEach(content => content.style.display = 'none'); 
+
+    // 显示当前图片和文本内容
+    slides[currentSlide].style.opacity = 1;
+    contents[currentSlide].style.display = 'block'; 
+    
+    // 显示当前背景图片并隐藏其他背景图片
+    imageWrappers.forEach((wrapper, index) => {
+      if (index === currentSlide) {
+        wrapper.style.display = 'block';
+      } else {
+        wrapper.style.display = 'none';
+      }
+    });
+  }
+  
+  function changeSlide(n) {
+    showSlide(currentSlide + n);
+  }
+  
+  function autoSlide() {
+    changeSlide(1); // 切换到下一张图片
+    setTimeout(autoSlide, 10000); // 3秒后再次自动切换
+  }
+  
+  window.onload = function() {
+    showSlide(currentSlide); // 首次加载显示第一张图片
+    autoSlide(); // 页面加载后开始自动切换
+  };
+</script>
+<!-- JavaScript代码海报 -->	
 
 
 	
