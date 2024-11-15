@@ -1,21 +1,27 @@
-/* 基础样式设置 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Arial', '微软雅黑', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+#backToTopBtn {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    padding: 8px 10px;
+    background-color: rgba(143,195,53,0.45);
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
-
-h1, h3 {
-    font-family: 'Helvetica Neue', sans-serif;
-    color: #333;
+/* 导航字体链接 */
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
 }
-
 /* 头部样式 */
 .header {
     background-color: #333;
@@ -24,7 +30,7 @@ h1, h3 {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+	z-index: 1;
 }
 
 .navbar {
@@ -34,7 +40,7 @@ h1, h3 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: #333;
+    background-color: #333; /* 导航栏背景颜色 */
 }
 
 .logo {
@@ -69,7 +75,14 @@ h1, h3 {
     font-size: 14px; /* 字体大小 */
 }
 
-/* 移动端适配 */
+/* 电脑样式 */
+@media (min-width: 1024px) {
+    .menu-icon {
+        display: none;
+    }
+}
+
+/* 平板和手机共享样式 */
 @media screen and (max-width: 1023px) {
     .nav-links {
         display: none;
@@ -87,7 +100,7 @@ h1, h3 {
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 10px 0;/* 字体行高 */
     }
 
     .menu-icon {
@@ -96,17 +109,24 @@ h1, h3 {
     }
 }
 
-/* 内容和底部样式 */
+
+/* 内容样式 */
 .vogana01 {
     height: 60px;
 }
 
-.vogana02, .content {
-    font-size: 16px;
-    color: #555;
+.vogana02 {
+    height: 100%;
+    font-size: 16px; /* 字体大小 */
+    color: #000000; /* 文本颜色 */
+}
+
+.content {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
+    font-size: 16px; /* 字体大小 */
+    color: #555; /* 文本颜色 */
 }
 
 /* 底部样式 */
@@ -148,74 +168,111 @@ h1, h3 {
 }
 
 .menu-list a:hover {
-    color: #ff9800;
+    color: #ff9800; /* 鼠标悬停时的颜色 */
 }
 
-/* 图片展示优化 */
-.image-wrapper {
-    width: 100%;
-    height: 100%;
+/* 媒体查询：电脑 */
+@media screen and (min-width: 1024px) {
+
+    .image {
+        flex-basis: calc(33.33% - 10px); /* 每行三张图片，每张图片占据1/3的宽度 */
+    }
 }
 
-.carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-}
-
-.carousel img {
-    max-width: 100%;
-    max-height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.carousel-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    z-index: 1;
-    display: none;
-}
-
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    z-index: 2;
-}
-
-.carousel-btn.prev {
-    left: 0;
-}
-
-.carousel-btn.next {
-    right: 0;
-}
-
-/* 响应式调整图片布局 */
+/* 媒体查询：平板和手机共享样式 */
 @media screen and (max-width: 1023px) {
+
+
     .image {
-        flex-basis: 50%; /* 每行两张图片 */
+        flex-basis: calc(50% - 10px); /* 每行两张图片，每张图片占据1/2的宽度 */
     }
 }
 
+/* 媒体查询：手机 */
 @media screen and (max-width: 767px) {
+
+
     .image {
-        flex-basis: 100%; /* 每行一张图片 */
+        flex-basis: 100%; /* 每行一张图片，每张图片占据100%的宽度 */
     }
+}
+
+/* 媒体查询：电脑 */
+@media screen and (min-width: 1024px) {
+    .mobile-content {
+        display: none;
+    }
+}
+
+/* 媒体查询：平板 */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .desktop-content {
+        display: none;
+    }
+}
+
+/* 媒体查询：手机 */
+@media screen and (max-width: 767px) {
+    .desktop-content {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+/* 基础样式设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', '微软雅黑', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+}
+
+
+/* 关于我们部分 */
+#about-us {
+    background-color: white;
+    padding: 50px 20px;
+    margin: 0 0px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+#about-us h1, #about-us h2 {
+    text-align: center;
+    color: #ff6600;
+}
+
+#about-us h1 {
+    margin-bottom: 20px;  /* Adjust as needed */
+    font-size: 2.2em;       /* Adjust the font size for h1 */
+}
+
+#about-us h2 {
+    margin-bottom: 20px;  /* Adjust as needed */
+    font-size: 2.2em;     /* Adjust the font size for h2 */
+}
+
+
+#about-us p {
+    font-size: 1.2em;
+    text-align: left;
+    line-height: 1.6;
 }
 
 /* 服务部分 */
@@ -267,10 +324,15 @@ h1, h3 {
     color: #ff6600;
 }
 
-/* 针对小屏幕的适配 */
+/* 响应式设计 */
 @media (max-width: 768px) {
+
     #about-us {
         padding: 30px 20px;
+    }
+
+    #about-us h2 {
+        font-size: 2em;
     }
 
     .service {
@@ -283,7 +345,98 @@ h1, h3 {
 }
 
 @media (max-width: 480px) {
+
+
     .service {
         padding: 15px;
     }
 }
+
+
+
+
+
+  /* CSS样式海报 */
+  .image-wrapper {
+  width: 100%; /* 设置宽度为100% */
+  height: 100%;
+}
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+  .carousel img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始状态设置为透明 */
+    transition: opacity 0.5s ease;
+  }
+  .carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    display: none;
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    z-index: 2;
+  }
+  .carousel-btn.prev {
+    left: 0;
+  }
+  .carousel-btn.next {
+    right: 0;
+  }
+
+  /* 响应式设计 */
+  @media screen and (max-width: 767px) {
+    .carousel {
+      height: 160px;
+    }
+  .annazi-ggh h1,
+  .annazi-gh h2 {
+    margin-bottom: 20px;  /* Adjust as needed */
+    font-size: 2.2em;       /* Adjust the font size for h1 */
+  }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel {
+      height: 300px;
+    }
+  .annazi-ggh h1,
+  .annazi-gh h2 {
+    margin-bottom: 20px;  /* Adjust as needed */
+    font-size: 2.2em;       /* Adjust the font size for h1 */
+  }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .carousel {
+      height: 400px;
+      
+    }
+  .annazi-ggh h1,
+  .annazi-gh h2 {
+    margin-bottom: 20px;  /* Adjust as needed */
+    font-size: 2.2em;       /* Adjust the font size for h1 */
+  }
+  }
