@@ -120,11 +120,3 @@ document.addEventListener('DOMContentLoaded', function () {
     footerElement.innerHTML = footerContent;
   }
 });
-
-// 切换导航菜单显示
-function toggleNav() {
-  const navLinks = document.getElementById('navLinks');
-  if (navLinks) {
-    navLinks.classList.toggle('active');  // 切换类名
-  }
-}
