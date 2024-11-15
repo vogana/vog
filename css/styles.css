@@ -429,7 +429,8 @@ h1, h3 {
     }
   .annazi-ggh h1,
   .annazi-gh h2 {
-    font-size: 18px; /* 调整电脑端H2字体大小为14像素 */
+    margin-bottom: 20px;  /* Adjust as needed */
+    font-size: 2.2em;       /* Adjust the font size for h1 */
   }
   }
   
@@ -439,7 +440,8 @@ h1, h3 {
     }
   .annazi-ggh h1,
   .annazi-gh h2 {
-    font-size: 20px; /* 调整电脑端H2字体大小为14像素 */
+    margin-bottom: 20px;  /* Adjust as needed */
+    font-size: 2.2em;       /* Adjust the font size for h1 */
   }
   }
   
@@ -450,6 +452,7 @@ h1, h3 {
     }
   .annazi-ggh h1,
   .annazi-gh h2 {
-    font-size: 25px; /* 调整电脑端H2字体大小为14像素 */
+    margin-bottom: 20px;  /* Adjust as needed */
+    font-size: 2.2em;       /* Adjust the font size for h1 */
   }
   }
