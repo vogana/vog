@@ -24,7 +24,7 @@
     width: 15px;
     height: 50px;
     position: fixed; /* 使用 fixed 定位 */
-    top: 400px; /* 距顶部 400px */
+    bottom: 200px; /* 距离底部 100px */
     right: 0; /* 靠右边缘 */
     transform: translate(0, -50%); /* 使用平移来垂直居中 */
     border-top-left-radius: 10px;
