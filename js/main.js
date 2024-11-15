@@ -94,10 +94,6 @@ const headContent = `
   <meta name="googlebot" content="noindex">
   <meta name="googlebot-news" content="nosnippet">
   <meta name="geo.placename" content="浙江、宁波">
-  <link rel="stylesheet" href="css/styles.css?v=2">
-  <link rel="stylesheet" href="css/styless.css?v=2">
-  <link rel="stylesheet" href="css/stylesb.css?v=2">
-  <link rel="stylesheet" href="css/styles-h.css?v=2">
 `;
 
 // 在页面加载时插入内容
