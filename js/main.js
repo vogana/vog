@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // 插入 head 内容
   const headElement = document.querySelector('head');
   if (headElement) {
-    headElement.innerHTML += headContent;
+    headElement.insertAdjacentHTML('beforeend', headContent);  // 使用 insertAdjacentHTML 插入
   }
 
   // 插入页头内容
@@ -121,4 +121,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-
+// 切换导航菜单显示
+function toggleNav() {
+  const navLinks = document.getElementById('navLinks');
+  if (navLinks) {
+    navLinks.classList.toggle('active');  // 切换类名
+  }
+}
