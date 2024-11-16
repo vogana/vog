@@ -251,7 +251,7 @@ h1, h3 {
 
 /* 关于我们部分 */
 #about-us {
-    background-color: white;
+    background-color: #ffffff63;
     padding: 50px 20px;
     margin: 0 0px 50px;
     border-radius: 10px;
@@ -283,7 +283,7 @@ h1, h3 {
 
 /* 服务部分 */
 .service {
-    background-color: white;
+    background-color: #ffffff63;
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 10px;
