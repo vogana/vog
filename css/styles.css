@@ -338,9 +338,12 @@ h1, h3 {
     }
 
     #about-us h2 {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
+    #about-us h1 {
+        font-size: 1.6em;
+    }
     .service {
         padding: 15px;
     }
