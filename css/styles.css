@@ -265,13 +265,13 @@ h1, h3 {
 }
 
 #about-us h1 {
-    margin-bottom: 20px;  /* Adjust as needed */
-    font-size: 2.2em;       /* Adjust the font size for h1 */
+    margin-bottom: 15px;  /* Adjust as needed */
+    font-size: 1.8em;       /* Adjust the font size for h1 */
 }
 
 #about-us h2 {
-    margin-bottom: 20px;  /* Adjust as needed */
-    font-size: 2.2em;     /* Adjust the font size for h2 */
+    margin-bottom: 15px;  /* Adjust as needed */
+    font-size: 1.8em;     /* Adjust the font size for h2 */
 }
 
 
@@ -338,11 +338,11 @@ h1, h3 {
     }
 
     #about-us h2 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .service {
-        padding: 20px;
+        padding: 15px;
     }
 
     .service h3 {
